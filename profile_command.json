@@ -1,0 +1,102 @@
+{
+    "name": "profile",
+    "permissions": "NONE",
+    "restriction": "1",
+    "_id": "xbrAs",
+    "actions": [
+      {
+        "member": "1",
+        "varName": "",
+        "dataName": "bio",
+        "defaultVal": "0",
+        "storage": "1",
+        "varName2": "bbio",
+        "name": "Store Member Data"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "info": "3",
+        "storage": "1",
+        "varName2": "name",
+        "name": "Store Member Info"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "dataName": "Data",
+        "defaultVal": "0",
+        "storage": "1",
+        "varName2": "myData",
+        "name": "Store Member Data"
+      },
+      {
+        "url": "https://cdn.discordapp.com/attachments/623458190792720389/671271515207106570/back1.png",
+        "storage": "1",
+        "varName": "wooden",
+        "name": "Create Image"
+      },
+      {
+        "member": "1",
+        "varName": "",
+        "storage": "1",
+        "varName2": "avatar",
+        "name": "Create Image from Avatar"
+      },
+      {
+        "storage": "1",
+        "varName": "avatar",
+        "width": "173",
+        "height": "165",
+        "name": "Resize Image"
+      },
+      {
+        "storage": "1",
+        "varName": "wooden",
+        "storage2": "1",
+        "varName2": "avatar",
+        "x": "167",
+        "y": "127",
+        "mask": "0",
+        "name": "Draw Image on Image"
+      },
+      {
+        "storage": "1",
+        "varName": "wooden",
+        "x": "207",
+        "y": "334",
+        "font": "fonts/Asimov.fnt",
+        "width": "0",
+        "text": "${tempVars(\"name\")}",
+        "name": "Draw Text on Image"
+      },
+      {
+        "storage": "1",
+        "varName": "wooden",
+        "x": "16",
+        "y": "382",
+        "font": "fonts/Asimov.fnt",
+        "width": "550",
+        "text": "${tempVars(\"bbio\")}",
+        "name": "Draw Text on Image"
+      },
+      {
+        "storage": "1",
+        "varName": "wooden",
+        "x": "201",
+        "y": "47",
+        "font": "fonts/Asimov.fnt",
+        "width": "",
+        "text": "${tempVars(\"myData\")} (Your Currency)",
+        "name": "Draw Text on Image"
+      },
+      {
+        "storage": "1",
+        "varName": "wooden",
+        "channel": "0",
+        "varName2": "",
+        "message": "",
+        "name": "Send Image"
+      }
+    ]
+  }
